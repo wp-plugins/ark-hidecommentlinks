@@ -1,0 +1,12 @@
+.arklink { color: #0944A2 !important;cursor:pointer !important; /* цвет ссылки, курсор в виде пальца */ }
+.arklink:hover { color: #f00 !important; /* цвет ссылки */ text-decoration: none !important; /* отключение подчёркивания */ }
+.tooltip {
+border: 1px #696969 solid !important;
+background: #FEFFE2 !important;
+color: #0944A2 !important;
+border-radius: 5px !important;
+font: bold 14px Arial, Verdana;
+padding: 5px !important;
+width: auto !important;
+white-space: nowrap !important;
+}
