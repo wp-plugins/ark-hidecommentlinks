@@ -4,7 +4,7 @@ Plugin Name: ark-hidecommentlinks
 Author: Александр Каратаев
 Plugin URI: http://blog.ddw.kz/zakryt-ssylki-v-kommentariyax-wordpress.html
 Description: Плагин закрывает ссылки на сайты комментаторов, оставляя возможность перехода на эти сайты
-Version: 1.0
+Version: 1.1
 Author URI: http://blog.ddw.kz
 License: GPL2
 */
@@ -54,7 +54,7 @@ add_action( 'wp_enqueue_scripts', 'set_script_hidecommentlinks' );
 function ark_comment_author_link( $link ){
     $link = str_replace( // вызываем функцию замены в строке
         array('<a', '</a>', 'href=','http://','external nofollow','rel=',"''"), // что заменяем
-        array('<span class="arklink" onclick="arkrun(this)"', '</span>', 'title=', '', '', '',''), // на что заменяем
+        array('<a style="cursor:pointer !important;"><span onclick="arkrun(this)"', '</span></a>', 'title=', '', '', '',''), // на что заменяем
         $link // в строке с html-кодом ссылки
     );
     return $link; // возвращаем новую ссылку после замены
@@ -62,4 +62,15 @@ function ark_comment_author_link( $link ){
 // подключаем фильтр
 add_filter( "get_comment_author_link", "ark_comment_author_link" );
 /* ========================================================================== */
+/* ==========================================================================
+ * Функция закрытия replytocom
+ * Источник: seo-mayak.com/seo-prodvizhenie/tonkosti-prodvizheniya/dubli-stranic-replytocom.html
+ * ========================================================================== */
+ function mayak_replycom_remove( $mayak_remove ) {
+$cut = "!<a(.*?)href='(.*?)'(.*?)>(.*?)</a>!si";
+$insert = "<a class='comment-reply-link' style='cursor:pointer !important;'><span class='comment-reply-link' \\3>\\4</span></a>";
+return preg_replace($cut, $insert, $mayak_remove);
+}
+add_filter( 'comment_reply_link', 'mayak_replycom_remove' );
+ /* ========================================================================== */
 ?>
