@@ -3,8 +3,8 @@ Contributors: AlexKar
 Donate link: http://blog.ddw.kz/podderzhka-proektov-avtora-etogo-bloga
 Tags: related, posts, post
 Requires at least: 4.0
-Tested up to: 4.1.1
-Stable tag: 1.1
+Tested up to: 4.2.2
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,6 +46,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Changelog ==
 
+= 1.2 =
+* Убрана ссылка из скрипта
+
 = 1.1 =
 * Добавлена вырезка replytocom
 
@@ -53,6 +56,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 * Первая версия
 
 == Upgrade Notice ==
+
+= 1.2 =
+* Убрана ссылка из скрипта всплывающей подсказки
 
 = 1.1 =
 * Добавлено удаление replytocom из ссылки ответа на комментарий

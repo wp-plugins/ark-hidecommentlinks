@@ -4,7 +4,7 @@ Plugin Name: ark-hidecommentlinks
 Author: Александр Каратаев
 Plugin URI: http://blog.ddw.kz/zakryt-ssylki-v-kommentariyax-wordpress.html
 Description: Плагин закрывает ссылки на сайты комментаторов, оставляя возможность перехода на эти сайты
-Version: 1.1
+Version: 1.2
 Author URI: http://blog.ddw.kz
 License: GPL2
 */

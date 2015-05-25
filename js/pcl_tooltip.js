@@ -1,7 +1,7 @@
 //----------------------------------------------------------------------
 // PCL's Nice Tooltip 1.0.0
 // Copyright (C) ManHunter / PCL
-// http://www.manhunter.ru
+// manhunter.ru
 //
 // Скрипт успешно протестирован в браузерах:
 // - Internet Explorer 6,7; TheWorld, MyIE2/Maxthon, Avant Browser
